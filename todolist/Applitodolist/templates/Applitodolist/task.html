@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Applitodolist/css/style_task.css' %}">
+    <link rel="stylesheet" href="{% static 'Applitodolist/bootstrap/css/bootstrap.min.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section">
+        <h1 class="text-center">Crée une tache</h1>
+
+        <div class="custom">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p}}
+                <input class="submit" type="submit" value="Ajouter">
+            </form>
+        
+        </div>
+        
+    </section>
+
+</body>
+</html>

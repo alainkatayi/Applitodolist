@@ -1,0 +1,72 @@
+.text-custom{
+    text-align: center;
+    position: relative;
+    top: 90px;
+    
+}
+
+#id_username{
+    border-radius: 5px;
+    position: relative;
+    height: 40px;
+    width: 200px;
+    left: 100px;
+    
+}
+
+#id_password{
+    border-radius: 5px;
+    position: relative;
+    height: 40px;
+    width: 200px;
+    left: 100px;
+    margin-top: 30px;
+    
+}
+
+label{
+    color: white;
+    position: relative;
+    left: 50px;
+}
+
+.custom-form{
+    position: relative;
+    left: 400px;
+    background-color: #031d2c;
+    padding: 50px;
+    top: 150px;
+    width: 600px;
+    height: 320px;
+    border-radius: 10px;
+
+}
+
+.submit{
+    position: relative;
+    left: 220px;
+    background-color: #18587c;
+    padding: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: #031d2c;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.create_compte{
+    position: relative;
+    left: 210px;
+}
+
+.message{
+    color: rgb(255, 0, 0);
+    position: relative;
+    left: 40px;
+}
+
+.custom-formr{
+    background-color: black;
+}
+

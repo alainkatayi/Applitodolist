@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="stylesheet" href="{% static 'Applitodolist/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Applitodolist/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+    <p><a href="{% url 'Applitodolist:create_task' %}">Creer</a></p>
+    <div class="container">
+        <h1 class="text-center custom-h1">Welcome</h1>
+    </div>
+
+    {%  if user.is_authenticated %}
+        <p>Connecter sous  {{  user.username }} </p> 
+        <a href="{% url 'accounts:logout' %}">Deconnexion</a>
+    {% else %}
+    <p><a href="{% url 'accounts:login_user' %}">X</a></p>
+    {% endif %}
+
+    <ul>
+        {% for tasks in task %}
+        <li> <a href="{% url 'Applitodolist:show' tasks.id %}">{{ tasks.title }}</a> </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

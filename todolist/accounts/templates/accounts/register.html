@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'accounts/css/style_register.css' %}">
+    <link rel="stylesheet" href="{% static 'accounts/bootstrap/css/bootstrap.min.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="register">Register</h1>
+
+    <div class="custom-formr">
+        <form method="post">
+            {%  csrf_token %}
+            {{ form }}
+            <input class="submit" type="submit" value="Crée mon compte">
+        </form>
+    </div>
+</body>
+</html>
