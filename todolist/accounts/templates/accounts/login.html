@@ -25,12 +25,23 @@
 
         <form method="post">
             {% csrf_token %}
-            {{ form }}
+            <div>
+                <input type="text" name="username" placeholder="Username" id="id_username" required >
+            </div>
+            <div>
+                <input type="password" name="password" placeholder="Password" id="id_password" required >
+            </div>
+            
             <input class="submit" type="submit" value="Login">
         </form>
-        <p><a class="create_compte" href="{% url 'accounts:register_user' %}">Creer un compte</a></p>
+        <p><a class="create_compte" href="{% url 'accounts:register_user' %}">Sign Up</a></p>
 
     </div>
+
+
+
+
+
 
 
 

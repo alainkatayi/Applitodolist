@@ -19,7 +19,7 @@ def login_user(request):
             #(request,'Applitodolist/index.html')
             return redirect('Applitodolist:index')
         else:
-            messages.info (request, "Mot de passe ou nom d'utilisateur incorrect")
+            messages.info (request, "Incorrect password or username")
 
     form = AuthenticationForm()
     return render (request, 'accounts/login.html', {"form": form})
