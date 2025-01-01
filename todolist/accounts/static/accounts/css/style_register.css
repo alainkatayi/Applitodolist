@@ -5,33 +5,22 @@
 }
 
 .custom-formr{
-    
-        position: relative;
-        display: inline-block;
-        /*left: 400px;*/
-        background-color: #ffffff;
-        padding: 50px;
-        margin-left: 490px;
-        margin-top: 30px;
-        /*top: 150px;*/
-        /*width: 600px;
-        height: 320px;*/
-        border-radius: 20px;
-        box-shadow: 5px 10px 30px rgb(168, 167, 167);
-    
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 50px;
+    margin-left: 490px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgb(168, 167, 167);
     }
-
-
 
 .helptext{
     color: rgb(255, 0, 0);
     position: relative;
     left: 580px;
     display: none;
-    
 }
-
-
 
 #id_username{
     border-radius: 10px;
@@ -40,8 +29,6 @@
     width: 300px;
     color: black;
     padding:    15px;
-
-    
 }
 
 #id_password1{
@@ -51,8 +38,8 @@
     width: 300px;
     margin-top: 30px;
     padding: 15px;
-    
 }
+
 #id_password2{
     border-radius: 10px;
     border-style: double;
@@ -60,8 +47,8 @@
     width: 300px;
     margin-top: 30px;
     padding: 15px;
-    
 }
+
 
 .submit{
     position: relative;
@@ -69,7 +56,6 @@
     background-color: #031d2c;
     padding: 10px;
     height: 50px;
-    /*width: 100px;*/
     border-radius: 5px;
     border-color: #031d2c;
     margin-top: 30px;

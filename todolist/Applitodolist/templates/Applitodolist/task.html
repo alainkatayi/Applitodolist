@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'Applitodolist/css/style_task.css' %}">
     <link rel="stylesheet" href="{% static 'Applitodolist/bootstrap/css/bootstrap.min.css' %}">
-    <title>Document</title>
+    <title>Task</title>
 </head>
 <body>
     <section class="section">
@@ -15,8 +15,6 @@
         <div class="custom">
             <form method="post">
                 {% csrf_token %}
-
-
 
                 <p class="title">TITILE</p>
                 <input type="text" name="title" placeholder="eg:Go to the doctor" label = " " id="id_title" required><br>
@@ -35,8 +33,6 @@
                 </select> <br>
 
                 <input class="submit" type="submit" value="Add">
-
-                
             </form>
         
         </div>

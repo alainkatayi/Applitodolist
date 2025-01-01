@@ -1,14 +1,9 @@
 .custom-form{
-    position: relative;
     display: inline-block;
-    /*left: 400px;*/
     background-color: #ffffff;
     padding: 50px;
     margin-left: 490px;
     margin-top: 30px;
-    /*top: 150px;*/
-    /*width: 600px;
-    height: 320px;*/
     border-radius: 20px;
     box-shadow: 5px 10px 30px rgb(168, 167, 167);
 
@@ -18,7 +13,6 @@
     text-align: center;
     position: relative;
     margin: 30px;
-    
 }
 
 #id_username{
@@ -28,8 +22,6 @@
     width: 300px;
     color: black;
     padding:    15px;
-
-    
 }
 
 #id_password{
@@ -39,9 +31,7 @@
     width: 300px;
     margin-top: 30px;
     padding: 15px;
-    
 }
-
 
 .submit{
     position: relative;
@@ -68,6 +58,3 @@
     position: relative;
     left: 0px;
 }
-
-
-

@@ -11,22 +11,17 @@
     padding-left: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-    /*width: 600px;*/
     border-radius: 20px;
-    margin: 20px;
-    position: relative;
-    left: 0px;
+    margin: 50px;
     box-shadow: 5px 10px 30px rgb(168, 167, 167);
-
 }
-
-
 
 .title{
     color: black;
     font-size: 15px;
     margin: 10px;
 }
+
 
 #id_title{
     border-radius: 10px;
@@ -35,8 +30,6 @@
     padding: 20px;
     width: 680px;
     color: rgb(0, 0, 0);
-    position: relative;
-    left: 0px;
 }
 
 #id_description{
@@ -46,31 +39,22 @@
     height: 100px;
     width: 680px;
     color: rgb(0, 0, 0);
-    position: relative;
-    left: 0px;
     padding: 20px;
 }
 
-
 #id_is_completed{
-
     border-radius: 30px;
     height: 20px;
     width:40px;
-    position: relative;
-    left: 0px;
 }
 
 #id_finish_date{
     border-color: #022530;
     background-color: #ffffff56;
     border-radius: 10px;
-    /*height: 50px;*/
     padding: 20px;
     width: 680px;
     color: rgb(0, 0, 0);
-    position: relative;
-    left:0px;
 }
 
 #id_priority{
