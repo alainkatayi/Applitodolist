@@ -1,0 +1,16 @@
+.user{
+    color: rgb(4, 105, 100);
+    margin-top: 0px;
+}
+
+.username{
+    margin-top: 30px;
+}
+
+.div{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 30px rgb(168, 167, 167);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}

@@ -6,14 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>info user</title>
-    <link rel="stylesheet" href="{% static 'Applitodolist/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Applitodolist/css/style_user.css' %}">
     <link rel="stylesheet" href="{% static 'Applitodolist/bootstrap/css/bootstrap.min.css' %}">
 </head>
 <body>
     
 
-    <h1 class="text-center">
-        {{ user.username }}
-    </h1>
+    <div class="div">
+        <h1 class="text-center user">
+            Profil
+          </h1>
+          <h2 class=" text-center username">
+              {{ user.username | upper }}
+          </h2>
+    </div>
+
+
 </body>
 </html>

@@ -10,12 +10,12 @@ def index(request):
     context = {"task": Task.objects.filter(user=request.user)}
     return render (request, 'Applitodolist/index.html', context)
 
-
+@login_required
 def show (request, task_id):
     context = {"tasks": get_object_or_404(Task, pk = task_id) }
     return render (request, 'Applitodolist/show.html', context)
 
-
+@login_required
 def create_task(request):
     if request.method == 'POST':
         form = TaskForm(request.POST)
@@ -32,7 +32,9 @@ def remove_task(request, task_id2):
     task = Task.objects.get(pk= task_id2)
     task.delete()
     return redirect("Applitodolist:index")
+    
 
-
+@login_required
 def info_user(request):
-    return render (request,'Applitodolist/user.html')
+    context = {"task": Task.objects.filter(user=request.user)}
+    return render (request,'Applitodolist/user.html', context)
