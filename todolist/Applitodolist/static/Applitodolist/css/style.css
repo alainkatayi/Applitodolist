@@ -1,7 +1,95 @@
 body{
     background-color: black;
 }
-
-.contr{
-    background-color: aqua;
+a{
+    text-decoration: none;
 }
+
+table a{
+    text-decoration: none;
+    color: rgb(4, 105, 100);
+    font-weight: bold;
+}
+
+.user-icon{
+    height: 30px;
+    width: 30px;
+}
+
+.connecte{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.connecte a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.user{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 10px 30px rgb(168, 167, 167);
+
+}
+
+.deconnecte{
+    background-color: rgb(2, 127, 131);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.custom-h1{
+    color: rgb(4, 105, 100);
+    margin: 20px;
+}
+
+
+.tout{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 30px rgb(168, 167, 167);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.en-tete{
+    color: rgba(0, 0, 0, 0.418);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+
+.add{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.add a{
+    text-decoration: none;
+
+}
+
+.add2{
+    background-color: #F1916D ;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 30px rgb(168, 167, 167);
+
+}
+
+.cc{
+    color: rgb(0, 0, 0);
+    background-color: #91EAAF;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+

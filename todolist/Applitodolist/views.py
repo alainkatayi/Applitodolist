@@ -27,3 +27,12 @@ def create_task(request):
     else:
         form = TaskForm()
     return render(request, 'Applitodolist/task.html', {"form": form})
+
+def remove_task(request, task_id2):
+    task = Task.objects.get(pk= task_id2)
+    task.delete()
+    return redirect("Applitodolist:index")
+
+
+def info_user(request):
+    return render (request,'Applitodolist/user.html')
