@@ -34,6 +34,17 @@ def remove_task(request, task_id2):
     return redirect("Applitodolist:index")
     
 
+def edit_task(request, task_id):
+    task = get_object_or_404(Task, pk=task_id)
+    if request.method == 'POST':
+        form = TaskForm(request.POST, instance=task) #formulaire avec les données de la tache existante
+        if form.is_valid():
+            form.save()
+            return redirect('Applitodolist:index')
+    else:
+        form = TaskForm(instance=task)
+    return render(request, 'Applitodolist/edit_task.html', {"form": form})
+
 @login_required
 def info_user(request):
     context = {"task": Task.objects.filter(user=request.user)}

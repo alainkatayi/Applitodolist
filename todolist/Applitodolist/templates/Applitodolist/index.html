@@ -15,7 +15,7 @@
         {%  if user.is_authenticated %}
         <!--p>User: {{  user.username }} </§p-->
         <a class="user" href="{% url 'Applitodolist:info_user' %}">
-             <img class="user-icon" src="utilisateur (1).svg" alt=""> : {{ user.username | upper }} </a>
+             <img class="user-icon" src="{% static '/Applitodolist/images/utilisateur (1).svg' %}" alt=""> : {{ user.username | upper }} </a>
 
         <a class="deconnecte" href="{% url 'accounts:logout' %}">Deconnexion</a>
 
@@ -61,6 +61,8 @@
                         <td> <p class="cc">{{ tasks.priority | upper }}</p> </td>
                         <td>
                             <a href="{% url 'Applitodolist:remove_task' tasks.id %}">X</a>
+
+                            <a href="{% url 'Applitodolist:edit_task' tasks.id %}">modifier</a> 
                         </td>
                     </tr>
     

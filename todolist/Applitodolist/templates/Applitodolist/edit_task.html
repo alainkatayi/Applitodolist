@@ -1,0 +1,34 @@
+{% load static %}  <!-- Add this line to load static files -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Task</title>
+</head>
+<body>
+    <h1>Edit Task</h1>
+  <!--  <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="{{ task.title }}"><br><br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" value="{{ task.description }}"><br><br>
+        <label for="is_completed">Is_completed:</label>
+        <input type="text" id="is_completed" name="is_completed" value="{{ task.is_completed }}"><br><br>
+        <label for="date_created">Date_created:</label>
+        <input type="text" id="date_created" name="date_created" value="{{ task.date_created }}"><br><br>
+        <label for="finish_date">Finish_date:</label>
+        <input type="text" id="finish_date" name="finish_date" value="{{ task.finish_date }}"><br><br>
+        <label for="priority">Priority:</label>
+        <input type="text" id="priority" name="priority" value="{{ task.priority }}"><br><br>
+        <button type="submit">Edit</button>    -->
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Modifier</button>
+        </form>
+
+
+</body>
+</html>
